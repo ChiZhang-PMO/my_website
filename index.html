@@ -47,7 +47,9 @@
     :root { color-scheme: light dark; }
   </style>
 </head>
-<body class="bg-white text-ink dark:bg-zinc-900 dark:text-zinc-100 font-body">
+<body class="bg-cover bg-center bg-no-repeat bg-fixed text-ink dark:bg-zinc-900 dark:text-zinc-100 font-body"
+      style="background-image: url('/figures/background.jpg');">
+
   <!-- Sticky nav -->
   <header class="sticky top-0 z-50 backdrop-blur bg-white/75 dark:bg-zinc-900/75 border-b border-zinc-200/60 dark:border-zinc-800">
     <div class="mx-auto max-w-5xl px-4 py-3 flex items-center justify-between">
@@ -91,14 +93,7 @@
         </div>
         <div class="md:col-span-2">
           <div class="aspect-square rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden shadow-sm">
-            <!-- Placeholder avatar block -->
-            <div class="w-full h-full flex items-center justify-center text-center p-8">
-              <div>
-                <div class="text-2xl font-semibold"> Chi Zhang </div>
-                <div class="text-fog dark:text-zinc-400">张 弛</div>
-                <div class="mt-3 text-sm">Trieste · Cosmology</div>
-              </div>
-            </div>
+            <img src="/figures/myself.jpg" alt="Chi Zhang" class="w-full h-full object-cover">
           </div>
         </div>
       </div>
