@@ -366,32 +366,26 @@
 
     <!-- Contact -->
     <section id="contact" class="mx-auto max-w-6xl px-4 py-10">
-      <div class="rounded-3xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white/70 dark:bg-zinc-900/50 shadow-soft p-6 sm:p-8 reveal">
+      <div class="rounded-3xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white/5 dark:bg-zinc-950/25 backdrop-blur-sm shadow-soft p-6 sm:p-8 reveal">
         <h2 class="font-display text-2xl font-semibold tracking-tight">Contact</h2>
-        <div class="mt-4 grid md:grid-cols-2 gap-6 text-sm text-zinc-700 dark:text-zinc-300">
+    
+        <div class="mt-4 space-y-4 text-sm text-zinc-700 dark:text-zinc-300">
           <div>
             <div class="font-medium">Email</div>
-            <a class="mt-1 inline-block underline underline-offset-4 hover:text-blue-600" href="mailto:chizhanpmo@gmail.com">chizhanpmo@gmail.com</a>
-
-            <div class="mt-4 font-medium">Address</div>
-            <div class="mt-1">Purple Mountain Observatory, CAS, No.10 Yuanhua Road, Nanjing, China</div>
+            <a class="mt-1 inline-block underline underline-offset-4 hover:text-blue-400"
+               href="mailto:chizhanpmo@gmail.com">chizhanpmo@gmail.com</a>
           </div>
+    
           <div>
-            <div class="font-medium">Links</div>
-            <div class="mt-1 flex flex-wrap gap-x-4 gap-y-2">
-              <a class="underline underline-offset-4 hover:text-blue-600" href="https://github.com/ChiZhang-PMO/">GitHub</a>
-              <a class="underline underline-offset-4 hover:text-blue-600" href="https://orcid.org/0000-0002-8472-1934/">ORCID</a>
-              <a class="underline underline-offset-4 hover:text-blue-600" href="https://inspirehep.net/authors/2657553?ui-citation-summary=true/">INSPIRE</a>
-            </div>
-            <div class="font-medium">Friends</div>
-            <div class="mt-1 flex flex-wrap gap-x-4 gap-y-2">
-              <a class="underline underline-offset-4 hover:text-blue-600" href="https://weiziwei-math.github.io/">GitHub</a>
-              TBD.
+            <div class="font-medium">Address</div>
+            <div class="mt-1">
+              Purple Mountain Observatory, CAS, No.10 Yuanhua Road, Nanjing, China
             </div>
           </div>
         </div>
       </div>
     </section>
+
 
     <!-- Travel & Photography -->
     <section id="travel" class="mx-auto max-w-6xl px-4 py-12">
@@ -474,6 +468,42 @@
                   Controls: <span class="text-zinc-300">←</span>/<span class="text-zinc-300">→</span> to navigate, <span class="text-zinc-300">Esc</span> to close.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Links -->
+    <section id="links" class="mx-auto max-w-6xl px-4 py-10">
+      <div class="rounded-3xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white/5 dark:bg-zinc-950/25 backdrop-blur-sm shadow-soft p-6 sm:p-8 reveal">
+        <h2 class="font-display text-2xl font-semibold tracking-tight">Usefull Links</h2>
+    
+        <div class="mt-4 grid md:grid-cols-2 gap-8 text-sm text-zinc-700 dark:text-zinc-300">
+          <!-- Your links -->
+          <div>
+            <div class="font-medium mb-3">Me</div>
+            <div class="flex flex-wrap gap-2">
+              <a class="inline-flex items-center rounded-full px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/10 transition"
+                 href="https://github.com/ChiZhang-PMO/" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <a class="inline-flex items-center rounded-full px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/10 transition"
+                 href="https://orcid.org/0000-0002-8472-1934/" target="_blank" rel="noreferrer">ORCID ↗</a>
+              <a class="inline-flex items-center rounded-full px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/10 transition"
+                 href="https://inspirehep.net/authors/2657553?ui-citation-summary=true/" target="_blank" rel="noreferrer">INSPIRE ↗</a>
+            </div>
+          </div>
+    
+          <!-- Friends -->
+          <div>
+            <div class="font-medium mb-3">Friends</div>
+            <div class="grid sm:grid-cols-2 gap-3">
+              <a class="rounded-2xl p-4 bg-white/5 hover:bg-white/10 border border-white/10 transition"
+                 href="https://weiziwei-math.github.io/" target="_blank" rel="noreferrer">
+                <div class="font-medium text-white">Ziwei Wei</div>
+                <div class="text-xs text-zinc-400 mt-1">Homepage ↗</div>
+              </a>
+    
+              <!-- Add more friend cards here -->
             </div>
           </div>
         </div>
@@ -682,7 +712,7 @@
 
 
     // ---- light scrollspy hint (bold current nav link) ----
-    const sections = ['home','education','research','contact','travel'].map(id => document.getElementById(id));
+    const sections = ['home','education','research','contact','travel', 'links'].map(id => document.getElementById(id));
     const navLinks = Array.from(document.querySelectorAll('.navlink'));
 
     function setActive(hash){
