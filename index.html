@@ -435,7 +435,12 @@
               <!-- Grid view -->
               <div id="travelGridView">
                 <p class="text-sm text-zinc-300">Click a photo to open it.</p>
-                <div id="travelGrid" class="mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3"></div>
+                <!-- ✅ scroll area -->
+                <div class="mt-4 max-h-[70vh] overflow-y-auto pr-1 overscroll-contain">
+                  <div id="travelGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3"></div>
+                </div>
+              </div>
+
               </div>
 
               <!-- Viewer view -->
@@ -531,7 +536,7 @@
     // Add your photos under /travel/ and list them here.
     // You can keep this list short now and expand later.
     const travelPhotos = [
-      { src: 'travel/trieste_city.jpg', caption: 'Trieste, Italy — city iews.' },
+      { src: 'travel/trieste_city.jpg', caption: 'Trieste, Italy — city views.' },
       { src: 'travel/trieste_arena.jpg', caption: 'Trieste, Italy — Roman Theatre.' },
       { src: 'travel/trieste_boats.jpg', caption: 'Trieste, Italy — Barcolana.' },
       { src: 'travel/trieste_beach.jpg', caption: 'Trieste, Italy — Molo Audace.' },
