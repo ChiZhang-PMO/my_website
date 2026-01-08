@@ -10,7 +10,7 @@
 
   <!-- Open Graph / Twitter -->
   <meta property="og:title" content="Chi Zhang — Astrophysics & Cosmology" />
-  <meta property="og:description" content="Dark Matter, large scale structure, cosmological simulations" />
+  <meta property="og:description" content="Dark matter, cosmological simulations, weak lensing, Lyman-α forest." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://chizhang-pmo.github.io/my_website/" />
   <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='100%25' height='100%25' fill='%230a0a0a'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23ffffff' font-family='Arial' font-size='64'%3EChi%20Zhang%3C/text%3E%3C/svg%3E" />
@@ -53,6 +53,7 @@
 
     /* Nice focus ring */
     :focus-visible { outline: 3px solid rgba(59, 130, 246, .6); outline-offset: 2px; }
+      .prose-justify { text-align: justify; text-justify: inter-word; }
   </style>
 
   <!-- JSON-LD (SEO) -->
@@ -89,11 +90,12 @@
       <a href="#home" class="font-display font-semibold tracking-tight text-base sm:text-lg">
         Chi Zhang <span class="ml-2 text-fog dark:text-zinc-400">张弛</span>
       </a>
-
       <nav class="hidden md:flex items-center gap-6 text-sm text-zinc-700 dark:text-zinc-300">
         <a class="navlink hover:text-blue-600" href="#home">Home</a>
+        <a class="navlink hover:text-blue-600" href="#education">Education</a>
         <a class="navlink hover:text-blue-600" href="#research">Research</a>
         <a class="navlink hover:text-blue-600" href="#contact">Contact</a>
+        <a class="navlink hover:text-blue-600" href="#travel">Travel</a>
       </nav>
 
       <div class="flex items-center gap-2"><a href="#cv" class="rounded-xl bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 px-3 py-2 text-xs font-medium hover:opacity-90">CV</a>
@@ -108,8 +110,10 @@
     <div id="mobileMenu" class="md:hidden hidden border-t border-zinc-200/60 dark:border-zinc-800/70">
       <div class="mx-auto max-w-6xl px-4 py-3 flex flex-col gap-2 text-sm text-zinc-700 dark:text-zinc-300">
         <a class="py-2" href="#home">Home</a>
+        <a class="py-2" href="#education">Education</a>
         <a class="py-2" href="#research">Research</a>
         <a class="py-2" href="#contact">Contact</a>
+        <a class="py-2" href="#travel">Travel</a>
       </div>
     </div>
   </header>
@@ -123,20 +127,22 @@
           <h1 class="mt-3 font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-tight">
             About Me
           </h1>
-          <p class="mt-5 text-base sm:text-lg text-zinc-700 dark:text-zinc-300 max-w-prose">
+          <p class="mt-5 text-base sm:text-lg text-zinc-700 dark:text-zinc-300 prose-justify">
             I am Chi Zhang, a Ph.D. student at the Purple Mountain Observatory (PMO) and the University of Science and Technology of China (USTC), supervised by Prof. Yi-Zhong Fan and Yue-Lin Sming Tsai. I was born in Ulanqab, Inner Mongolia, China, and I received my B.S. from the Department of Physics and Technology at Inner Mongolia University. My research focuses on investigating the nature of dark matter using numerical simulations and cosmological large-scale surveys, including weak gravitational lensing and the Lyman-α forest.
           </p>
 
           <!-- Keywords -->
           <div class="mt-5 flex flex-wrap gap-2">
-            <span class="text-xs rounded-full border border-zinc-700/80 bg-zinc-950/40 px-3 py-1 text-zinc-200">Dark matter</span>
-            <span class="text-xs rounded-full border border-zinc-700/80 bg-zinc-950/40 px-3 py-1 text-zinc-200">Cosmological simulations</span>
+            <span class="text-xs rounded-full border border-zinc-700/80 bg-zinc-950/40 px-3 py-1 text-zinc-200">Dark Matter</span>
+            <span class="text-xs rounded-full border border-zinc-700/80 bg-zinc-950/40 px-3 py-1 text-zinc-200">Cosmology</span>
+            <span class="text-xs rounded-full border border-zinc-700/80 bg-zinc-950/40 px-3 py-1 text-zinc-200">Numerical Simulations</span>
             <span class="text-xs rounded-full border border-zinc-700/80 bg-zinc-950/40 px-3 py-1 text-zinc-200">Large-scale structure</span>
           </div>
+        </div>
 
         <div class="lg:col-span-5 reveal">
-          <div class="rounded-3xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white/70 dark:bg-zinc-900/50 shadow-soft overflow-hidden">
-            <div class="aspect-[4/3] bg-zinc-100 dark:bg-zinc-800">
+          <div class="rounded-3xl overflow-hidden shadow-soft border border-zinc-200/10 dark:border-zinc-800/60 bg-white/5">
+            <div class="aspect-[4/3] bg-zinc-900/40">
               <img src="myself.jpg" alt="Portrait of Chi Zhang" class="w-full h-full object-cover" loading="lazy" decoding="async" />
             </div>
           </div>
@@ -144,11 +150,74 @@
       </div>
     </section>
 
+    <!-- Education & Experience -->
+    <section id="education" class="mx-auto max-w-6xl px-4 py-12">
+      <div class="reveal">
+        <h2 class="font-display text-3xl sm:text-4xl font-semibold tracking-tight text-emerald-800 dark:text-emerald-300">Education</h2>
+      </div>
+
+      <div class="mt-8 reveal rounded-3xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white/70 dark:bg-zinc-900/50 shadow-soft p-6 sm:p-8">
+        <!-- Header row (hidden on small screens) -->
+        <div class="hidden sm:grid grid-cols-12 gap-3 pb-3 text-xs uppercase tracking-wider text-fog dark:text-zinc-400 border-b border-zinc-200/70 dark:border-zinc-800/70">
+          <div class="col-span-6">Institution</div>
+          <div class="col-span-4">Position</div>
+          <div class="col-span-2 text-right">Duration</div>
+        </div>
+
+        <div class="divide-y divide-zinc-200/70 dark:divide-zinc-800/70">
+          <!-- Line 1 -->
+          <div class="grid grid-cols-12 gap-3 py-4">
+            <div class="col-span-12 sm:col-span-6 font-medium text-zinc-900 dark:text-zinc-100">
+              Purple Mountain Observatory, Chinese Academy of Science
+            </div>
+            <div class="col-span-12 sm:col-span-6 font-medium text-zinc-900 dark:text-zinc-100">
+              University of Science and Technology of China
+            </div>
+            <div class="col-span-12 sm:col-span-4 text-zinc-700 dark:text-zinc-300">
+              Ph.D. Student
+            </div>
+            <div class="col-span-12 sm:col-span-2 sm:text-right text-zinc-600 dark:text-zinc-400">
+              2021–Present
+            </div>
+          </div>
+
+          <div class="grid grid-cols-12 gap-3 py-4">
+            <div class="col-span-12 sm:col-span-6 font-medium text-zinc-900 dark:text-zinc-100">
+              Scuola Internazionale Superiore di Studi Avanzati (SISSA), Astroparticle and Gravitational Physics Group
+            </div>
+            <div class="col-span-12 sm:col-span-4 text-zinc-700 dark:text-zinc-300">
+              Visitor
+            </div>
+            <div class="col-span-12 sm:col-span-2 sm:text-right text-zinc-600 dark:text-zinc-400">
+              2024–2025
+            </div>
+          </div>
+          
+          <!-- Line 2 -->
+          <div class="grid grid-cols-12 gap-3 py-4">
+            <div class="col-span-12 sm:col-span-6 font-medium text-zinc-900 dark:text-zinc-100">
+              Inner Mongolia University, Department of Physics and Technology
+            </div>
+            <div class="col-span-12 sm:col-span-4 text-zinc-700 dark:text-zinc-300">
+              B.S., Physics
+            </div>
+            <div class="col-span-12 sm:col-span-2 sm:text-right text-zinc-600 dark:text-zinc-400">
+              2017–2021
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+
+    
+
     <!-- Research (figure + text, scroll narrative) -->
     <section id="research" class="mx-auto max-w-6xl px-4 py-12">
       <div class="reveal">
         <h2 class="font-display text-3xl sm:text-4xl font-semibold tracking-tight text-emerald-800 dark:text-emerald-300">Research</h2>
-        <p class="mt-3 text-zinc-700 dark:text-zinc-300 max-w-prose">
+        <p class="mt-3 text-zinc-700 dark:text-zinc-300 prose-justify">
           I study how dark-matter microphysics shapes cosmic structure and how these effects can be tested with simulations and cosmological surveys.
         </p>
       </div>
@@ -240,6 +309,7 @@
       </div>
     </section>
 
+    
     <!-- CV -->
     <section id="cv" class="mx-auto max-w-6xl px-4 py-10">
       <div class="rounded-3xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white/70 dark:bg-zinc-900/50 shadow-soft p-6 sm:p-8 reveal">
@@ -271,6 +341,85 @@
               <a class="underline underline-offset-4 hover:text-blue-600" href="https://github.com/ChiZhang-PMO/">GitHub</a>
               <a class="underline underline-offset-4 hover:text-blue-600" href="https://orcid.org/0000-0002-8472-1934/">ORCID</a>
               <a class="underline underline-offset-4 hover:text-blue-600" href="https://inspirehep.net/authors/2657553?ui-citation-summary=true/">INSPIRE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Travel & Photography -->
+    <section id="travel" class="mx-auto max-w-6xl px-4 py-12">
+      <div class="reveal">
+        <h2 class="font-display text-3xl sm:text-4xl font-semibold tracking-tight text-emerald-800 dark:text-emerald-300">Travel & Photography</h2>
+        <p class="mt-3 text-zinc-700 dark:text-zinc-300 prose-justify">
+          I keep a small photo journal from my trips. Instead of showing everything here, you can open an interactive gallery.
+        </p>
+      </div>
+
+      <div class="mt-8 reveal rounded-3xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white/70 dark:bg-zinc-900/50 shadow-soft overflow-hidden">
+        <div class="grid md:grid-cols-12 gap-0">
+          <div class="md:col-span-5">
+            <div class="aspect-[4/3] bg-zinc-100 dark:bg-zinc-800">
+              <img src="travel_cover.jpg" alt="Travel gallery cover" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <div class="md:col-span-7 p-6 sm:p-8">
+            <div class="text-xs uppercase tracking-wider text-fog dark:text-zinc-400">Photo journal</div>
+            <h3 class="mt-2 font-display text-2xl font-semibold tracking-tight">Moments on the road</h3>
+            <p class="mt-3 text-zinc-700 dark:text-zinc-300 prose-justify">
+              A lightweight gallery with keyboard navigation (←/→), touch-friendly buttons, and captions. Add or remove photos by editing the list in the JavaScript section.
+            </p>
+            <div class="mt-5 flex flex-wrap gap-3">
+              <button id="openTravel" class="rounded-2xl bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 text-sm font-medium">Open gallery</button>
+              <a class="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-950/30 px-5 py-2.5 text-sm hover:bg-white dark:hover:bg-zinc-900" href="#">Travel notes (optional)</a>
+            </div>
+            <p class="mt-3 text-xs text-fog dark:text-zinc-400">
+              Tip: put your photos in a folder like <code class="px-1.5 py-0.5 rounded bg-zinc-900/40 border border-zinc-800/60">/travel/</code> and update the <code class="px-1.5 py-0.5 rounded bg-zinc-900/40 border border-zinc-800/60">travelPhotos</code> array.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal gallery (hidden until opened) -->
+      <div id="travelModal" class="hidden fixed inset-0 z-50" aria-hidden="true">
+        <div id="travelBackdrop" class="absolute inset-0 bg-black/70"></div>
+        <div class="relative mx-auto max-w-6xl px-4 py-8">
+          <div class="rounded-3xl border border-zinc-200/10 dark:border-zinc-800/80 bg-zinc-950 shadow-soft overflow-hidden">
+            <div class="flex items-center justify-between gap-4 p-4 border-b border-zinc-800/70">
+              <div class="text-sm font-medium text-zinc-100">Travel gallery</div>
+              <button id="travelClose" class="rounded-2xl border border-zinc-700/70 bg-zinc-900/40 px-3 py-2 text-sm text-zinc-200 hover:bg-zinc-900" aria-label="Close">✕</button>
+            </div>
+
+            <div class="p-4 sm:p-6">
+              <!-- Grid view -->
+              <div id="travelGridView">
+                <p class="text-sm text-zinc-300">Click a photo to open it.</p>
+                <div id="travelGrid" class="mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3"></div>
+              </div>
+
+              <!-- Viewer view -->
+              <div id="travelViewer" class="hidden">
+                <div class="relative">
+                  <img id="travelImg" src="" alt="Travel photo" class="w-full max-h-[72vh] object-contain bg-black/30 rounded-2xl" />
+                  <button id="travelPrev" class="absolute left-2 top-1/2 -translate-y-1/2 rounded-2xl border border-zinc-700/70 bg-zinc-900/40 px-3 py-2 text-sm text-zinc-200 hover:bg-zinc-900" aria-label="Previous">‹</button>
+                  <button id="travelNext" class="absolute right-2 top-1/2 -translate-y-1/2 rounded-2xl border border-zinc-700/70 bg-zinc-900/40 px-3 py-2 text-sm text-zinc-200 hover:bg-zinc-900" aria-label="Next">›</button>
+                </div>
+
+                <div class="mt-4 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
+                  <div>
+                    <div id="travelCaption" class="text-sm text-zinc-200"></div>
+                    <div id="travelCounter" class="mt-1 text-xs text-zinc-400"></div>
+                  </div>
+                  <div class="flex flex-wrap items-center gap-3">
+                    <button id="travelToGrid" class="rounded-2xl border border-zinc-700/70 bg-zinc-900/40 px-4 py-2 text-sm text-zinc-200 hover:bg-zinc-900">Back to grid</button>
+                    <a id="travelOpenFile" class="text-xs text-zinc-200 underline underline-offset-4 hover:text-white" href="#" target="_blank" rel="noreferrer">Open original</a>
+                  </div>
+                </div>
+
+                <p class="mt-4 text-xs text-zinc-400">
+                  Controls: <span class="text-zinc-300">←</span>/<span class="text-zinc-300">→</span> to navigate, <span class="text-zinc-300">Esc</span> to close.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -332,27 +481,130 @@
     });
     toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-    // ---- copy email ----
-    const EMAIL = 'chizhanpmo@gmail.com';
-    document.getElementById('copyEmail').addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText(EMAIL);
-        const btn = document.getElementById('copyEmail');
-        const old = btn.textContent;
-        btn.textContent = 'Copied ✓';
-        setTimeout(() => btn.textContent = old, 1200);
-      } catch (e) {
-        window.location.href = 'mailto:' + EMAIL;
-      }
-    });
-
-    // ---- (removed: modal research cards, publications, projects) ----
+    // ---- research images ----
 
     // Tip: keep these three images next to index.html:
     //   research_lensing.jpg, research_lya.jpg, research_sims.jpg
 
+    // ---- travel gallery data (edit freely) ----
+    // Add your photos under /travel/ and list them here.
+    // You can keep this list short now and expand later.
+    const travelPhotos = [
+      { src: 'travel/travel_001.jpg', caption: 'Trieste, Italy — seaside walks.' },
+      { src: 'travel/travel_002.jpg', caption: 'Florence — art and architecture.' },
+      { src: 'travel/travel_003.jpg', caption: 'Rome — evening streets.' }
+    ];
+
+    (function initTravelGallery(){
+      const openBtn = document.getElementById('openTravel');
+      const modal = document.getElementById('travelModal');
+      if (!openBtn || !modal || !travelPhotos.length) return;
+
+      const backdrop = document.getElementById('travelBackdrop');
+      const closeBtn = document.getElementById('travelClose');
+
+      const gridView = document.getElementById('travelGridView');
+      const grid = document.getElementById('travelGrid');
+
+      const viewer = document.getElementById('travelViewer');
+      const img = document.getElementById('travelImg');
+      const cap = document.getElementById('travelCaption');
+      const counter = document.getElementById('travelCounter');
+      const openFile = document.getElementById('travelOpenFile');
+      const prev = document.getElementById('travelPrev');
+      const next = document.getElementById('travelNext');
+      const toGrid = document.getElementById('travelToGrid');
+
+      let idx = 0;
+      let gridBuilt = false;
+
+      function renderViewer(){
+        const item = travelPhotos[idx];
+        img.src = item.src;
+        cap.textContent = item.caption || '';
+        counter.textContent = `${idx + 1} / ${travelPhotos.length}`;
+        openFile.href = item.src;
+      }
+
+      function showGrid(){
+        viewer.classList.add('hidden');
+        gridView.classList.remove('hidden');
+      }
+
+      function showViewer(){
+        gridView.classList.add('hidden');
+        viewer.classList.remove('hidden');
+        renderViewer();
+        toGrid.focus();
+      }
+
+      function buildGrid(){
+        if (gridBuilt) return;
+        gridBuilt = true;
+        grid.innerHTML = travelPhotos.map((p, i) => {
+          const src = p.thumb || p.src;
+          const alt = (p.caption || `Travel photo ${i+1}`).replace(/"/g, '&quot;');
+          return `
+            <button type="button" data-idx="${i}" class="group relative overflow-hidden rounded-2xl border border-zinc-800/70 bg-zinc-900/30 hover:bg-zinc-900/50">
+              <div class="aspect-square bg-black/20">
+                <img src="${src}" alt="${alt}" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition" loading="lazy" decoding="async" />
+              </div>
+              <div class="absolute inset-0 ring-1 ring-inset ring-white/0 group-hover:ring-white/10 transition"></div>
+            </button>
+          `;
+        }).join('');
+
+        grid.querySelectorAll('[data-idx]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            idx = parseInt(btn.getAttribute('data-idx'), 10) || 0;
+            showViewer();
+          });
+        });
+      }
+
+      function open(){
+        modal.classList.remove('hidden');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        buildGrid();
+        showGrid();
+        closeBtn.focus();
+      }
+
+      function close(){
+        modal.classList.add('hidden');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        openBtn.focus();
+      }
+
+      function prevImg(){ idx = (idx - 1 + travelPhotos.length) % travelPhotos.length; renderViewer(); }
+      function nextImg(){ idx = (idx + 1) % travelPhotos.length; renderViewer(); }
+
+      openBtn.addEventListener('click', open);
+      closeBtn.addEventListener('click', close);
+      backdrop.addEventListener('click', close);
+
+      prev.addEventListener('click', prevImg);
+      next.addEventListener('click', nextImg);
+      toGrid.addEventListener('click', showGrid);
+
+      window.addEventListener('keydown', (e) => {
+        if (modal.classList.contains('hidden')) return;
+        if (e.key === 'Escape') { close(); return; }
+
+        // Only navigate with arrows in viewer mode
+        const viewerOpen = !viewer.classList.contains('hidden');
+        if (!viewerOpen) return;
+
+        if (e.key === 'ArrowLeft') { e.preventDefault(); prevImg(); }
+        if (e.key === 'ArrowRight') { e.preventDefault(); nextImg(); }
+      });
+    })();
+
+
     // ---- light scrollspy hint (bold current nav link) ----
-    const sections = ['research','contact'].map(id => document.getElementById(id));
+    const sections = ['home','education','research','contact','travel'].map(id => document.getElementById(id));
     const navLinks = Array.from(document.querySelectorAll('.navlink'));
 
     function setActive(hash){
